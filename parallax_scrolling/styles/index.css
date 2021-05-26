@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #0a2a43;
+  min-height: 1500px;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+
+  /* 对齐文本 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  background: linear-gradient(to top, #0a2a43, transparent);
+  width: 100%;
+  height: 100px;
+  z-index: 99;
+}
+
+section::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0a2a43;
+  mix-blend-mode: color;
+  z-index: 99;
+}
+
+section img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+#text {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  font-size: 10em;
+}
+
+#road {
+  z-index: 2;
+}

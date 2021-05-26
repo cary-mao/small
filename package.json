@@ -1,0 +1,23 @@
+{
+  "name": "small",
+  "version": "1.0.0",
+  "description": "some small projects for pratice",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cary-mao/small.git"
+  },
+  "keywords": [
+    "pratice",
+    "demo"
+  ],
+  "author": "cary-mao",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cary-mao/small/issues"
+  },
+  "homepage": "https://github.com/cary-mao/small#readme"
+}
