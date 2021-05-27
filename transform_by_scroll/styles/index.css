@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* 使滚动条产生 */
+  height: 200vh;
+  background-color: #111;
+  color: #111;
+}
+
+section {
+  position: absolute;
+  /* 相对于视口 */
+  width: 100%;
+  height: 100%;
+  /* png背景颜色 */
+  background-color: #2abbff;
+}
+
+section .curve {
+  position: absolute;
+  bottom: -200px;
+
+  width: 100%;
+  height: 200px;
+
+  transform-origin: top;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
