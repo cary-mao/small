@@ -9,3 +9,4 @@ https://cary-mao.github.io/small/
 * [全屏视频banner](https://github.com/cary-mao/small/tree/master/full_screen_video)  
 * [css3滚动转换](https://github.com/cary-mao/small/tree/master/transform_by_scroll)  
 * [全屏导航菜单](https://github.com/cary-mao/small/tree/master/full_screen_menu_overlay)
+* [盒子阴影加载动画](https://github.com/cary-mao/small/tree/master/box_shadow_loading)
