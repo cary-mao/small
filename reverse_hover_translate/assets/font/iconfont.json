@@ -1,0 +1,44 @@
+{
+  "id": "2524874",
+  "name": "外网图标",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1080508",
+      "name": "facebook",
+      "font_class": "facebook",
+      "unicode": "e620",
+      "unicode_decimal": 58912
+    },
+    {
+      "icon_id": "1244200",
+      "name": "linkedin",
+      "font_class": "linkedin",
+      "unicode": "e696",
+      "unicode_decimal": 59030
+    },
+    {
+      "icon_id": "8953301",
+      "name": "twitter",
+      "font_class": "twitter",
+      "unicode": "e83f",
+      "unicode_decimal": 59455
+    },
+    {
+      "icon_id": "15617363",
+      "name": "instagram",
+      "font_class": "instagram",
+      "unicode": "e8ce",
+      "unicode_decimal": 59598
+    },
+    {
+      "icon_id": "19447615",
+      "name": "Google+",
+      "font_class": "googleplus",
+      "unicode": "eaa6",
+      "unicode_decimal": 60070
+    }
+  ]
+}

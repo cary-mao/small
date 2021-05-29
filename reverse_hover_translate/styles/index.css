@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  background-color: #262626;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+}
+
+li {
+  list-style: none;
+  border: 1px solid #000;
+}
+
+a {
+  /* 让a不要越过Li的边界 */
+  display: inline-block;
+  position: relative;
+  /* 这是必须的，子元素z-index是负数时，如果父元素没有z-index，子元素会被覆盖 */
+  z-index: 0;
+  text-align: center;
+  padding: 1em 1.2em;
+  color: #fff;
+  text-decoration: none;
+  /* background-color: #333; */
+}
+
+li + li {
+  border-left: none;
+}
+
+a::before {
+  /* 使height: 100%可以解析 */
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  content: '';
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  /* 使用translate会面临隐藏不了的问题 */
+  /* transform: translateX(-100%); */
+  transform: scaleX(0);
+  /* 离开时right */
+  transform-origin: right;
+  transition: transform .5s ease-in-out;
+  vertical-align: middle;
+}
+
+li:nth-child(1) a::before {
+  background-color: #375a9d;
+}
+
+li:nth-child(2) a::before {
+  background-color: #4da8f0;
+}
+
+li:nth-child(3) a::before {
+  background-color: #ea5936;
+}
+
+li:nth-child(4) a::before {
+  background-color: #006fb8;
+}
+
+li:nth-child(5) a::before {
+  background-color: #f3535c;
+}
+
+a:hover::before {
+  transform: scaleX(1);
+  /* 进入时left */
+  transform-origin: left;
+  /* opacity: .8; */
+}
+
+.iconfont {
+  margin-right: 4px;
+}
