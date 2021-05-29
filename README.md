@@ -10,3 +10,4 @@ https://cary-mao.github.io/small/
 * [css3滚动转换](https://github.com/cary-mao/small/tree/master/transform_by_scroll)  
 * [全屏导航菜单](https://github.com/cary-mao/small/tree/master/full_screen_menu_overlay)
 * [盒子阴影加载动画](https://github.com/cary-mao/small/tree/master/box_shadow_loading)
+* [css3反向悬停](https://github.com/cary-mao/small/tree/master/reverse_hover_translate)
