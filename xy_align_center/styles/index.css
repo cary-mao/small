@@ -1,0 +1,29 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+main {
+  /* 垂直水平居中，固定宽高才有效 */
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  /* table和table-cell结合text-align和vertical-align实现内容水平垂直居中 */
+  display: table;
+
+  background-color: #dd3f3f;
+  color: #f7f3f4;
+}
+
+.content {
+  /* table-cell的内容可以使用text-align和vertical-align */
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 8em;
+}
