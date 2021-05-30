@@ -23,6 +23,8 @@ div::before {
   position: absolute;
   left: 0;
   top: 0;
+  /* 比p要低一层 */
+  z-index: -1;
 
   width: 100%;
   height: 100%;
