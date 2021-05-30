@@ -12,3 +12,4 @@ https://cary-mao.github.io/small/
 * [盒子阴影加载动画](https://github.com/cary-mao/small/tree/master/box_shadow_loading)
 * [css3反向悬停](https://github.com/cary-mao/small/tree/master/reverse_hover_translate)
 * [垂直水平居中文字](https://github.com/cary-mao/small/tree/master/xy_align_center_center)
+* [边框形状变换](https://github.com/cary-mao/small/tree/master/hover_border_shape_change)
