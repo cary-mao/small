@@ -27,7 +27,7 @@ a {
   /* 让a不要越过Li的边界 */
   display: inline-block;
   position: relative;
-  /* 这是必须的，子元素z-index是负数时，如果父元素没有z-index，子元素会被覆盖 */
+  /* 这是必须的，子元素z-index是负数时，如果父元素没有z-index，子元素会被后面兄弟元素覆盖 */
   z-index: 0;
   text-align: center;
   padding: 1em 1.2em;
