@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 const { Command } = require('commander')
 const create = require('./create/create')
 // const pkgDir = require('pkg-dir')

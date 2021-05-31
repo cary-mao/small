@@ -13,7 +13,7 @@ module.exports = function create (name, root = process.cwd()) {
       default: name,
       validate (value) {
         notEmpty.call(this, value, function () {
-          notProjectExsited.call(this, path.resolve(root, source_dir, name))
+          notProjectExsited.call(this, path.resolve(root, source_dir, value))
         });
       }
     },
