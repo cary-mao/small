@@ -16,4 +16,4 @@ https://cary-mao.github.io/small/
 - [css3 反向悬停](https://github.com/cary-mao/small/tree/master/reverse_hover_translate)
 - [垂直水平居中文字](https://github.com/cary-mao/small/tree/master/xy_align_center_text)
 - [边框形状变换](https://github.com/cary-mao/small/tree/master/hover_border_shape_change)
-- [css 图标悬停内圆效果](https://github.com/cary-mao/small/tree/master/src/icon_hover_inner_circle
+- [css 图标悬停内圆效果](https://github.com/cary-mao/small/tree/master/src/icon_hover_inner_circle)

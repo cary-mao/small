@@ -14,7 +14,7 @@ module.exports = function docs (root, name, text) {
   homeString = prettier.format(homeString, { parser: 'html' })
 
   let readmeString = shell.cat(readmePath).stdout
-  readmeString = readmeString + `* [${text}](https://github.com/cary-mao/small/tree/master/${source_dir}/${name}`
+  readmeString = readmeString + `* [${text}](https://github.com/cary-mao/small/tree/master/${source_dir}/${name})`
   readmeString = prettier.format(readmeString, { parser: 'markdown' })
 
   shell.ShellString(homeString).to(homePath)
