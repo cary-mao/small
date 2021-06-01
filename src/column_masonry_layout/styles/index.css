@@ -1,0 +1,30 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper {
+  width: 100%;
+  column-count: 5;
+  column-gap: 15px;
+}
+
+.wrapper .img {
+  margin-bottom: 15px;
+}
+
+.wrapper img {
+  width: 100%;
+}
+
+@media (max-width: 980px) {
+  .wrapper {
+    column-count: 4;
+  }
+}
+
+@media (max-width: 750px) {
+  .wrapper {
+    column-count: 2;
+  }
+}
