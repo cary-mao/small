@@ -10,7 +10,7 @@ module.exports = function docs (root, name, text) {
 
   let homeString = shell.cat(homePath).stdout
   let re = new RegExp('<section id="menu">[\\w\\W]*?<ul>([\\W\\w]*)?</ul>')
-  homeString = homeString.replace(re, `<section id="menu">h1>Small Project</h1><ul>$1<li><a href="./${source_dir}/${name}/index.html">${text}</a></li></ul>`)
+  homeString = homeString.replace(re, `<section id="menu"><h1>Small Project</h1><ul>$1<li><a href="./${source_dir}/${name}/index.html">${text}</a></li></ul>`)
   homeString = prettier.format(homeString, { parser: 'html' })
 
   let readmeString = shell.cat(readmePath).stdout
