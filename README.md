@@ -19,3 +19,4 @@ https://cary-mao.github.io/small/
 - [css 图标悬停内圆效果](https://github.com/cary-mao/small/tree/master/src/icon_hover_inner_circle)
 * [文本透明效果](https://github.com/cary-mao/small/tree/master/src/transparent_text_effect)
 * [多列瀑布流布局](https://github.com/cary-mao/small/tree/master/src/column_masonry_layout)
+* [悬停分割图片](https://github.com/cary-mao/small/tree/master/src/split_image_on_hover)
