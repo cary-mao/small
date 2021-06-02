@@ -50,7 +50,6 @@ module.exports = function create (name, root = process.cwd()) {
       templateString = injectStyles(templateString)
     }
 
-    templateString = templateString.replace(/[^\w\s]/, '')
     templateString = prettier.format(templateString, {
       parser: 'html'
     })
