@@ -23,3 +23,4 @@ https://cary-mao.github.io/small/
 - [霓虹灯效果](https://github.com/cary-mao/small/tree/master/src/neno_light)
 - [登录表单](https://github.com/cary-mao/small/tree/master/src/login_form)
 - [透明登录菜单](https://github.com/cary-mao/small/tree/master/src/transparent_login_form)
+- [背景冒泡效果](https://github.com/cary-mao/small/tree/master/src/bg_bubbles)
