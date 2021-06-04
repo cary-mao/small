@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #262626;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img_box {
+  width: 300px;
+  height: 300px;
+}
+
+.img_box img {
+  width: 100%;
+  filter: grayscale(100%);
+
+  transition: filter .5s;
+}
+
+.img_box:hover img {
+  filter: grayscale(0);
+}
