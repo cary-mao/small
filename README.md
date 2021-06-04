@@ -26,3 +26,4 @@ https://cary-mao.github.io/small/
 - [背景冒泡效果](https://github.com/cary-mao/small/tree/master/src/bg_bubbles)
 - [悬停缩放效果](https://github.com/cary-mao/small/tree/master/src/img_scale_effect)
 - [悬停灰度效果](https://github.com/cary-mao/small/tree/master/src/hover_grayscale_effect)
+- [文字选中效果](https://github.com/cary-mao/small/tree/master/src/selection_change)
