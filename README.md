@@ -28,3 +28,4 @@ https://cary-mao.github.io/small/
 - [悬停灰度效果](https://github.com/cary-mao/small/tree/master/src/hover_grayscale_effect)
 - [文字选中效果](https://github.com/cary-mao/small/tree/master/src/selection_change)
 - [导航菜单悬停效果](https://github.com/cary-mao/small/tree/master/src/nav_menu_hover_effect)
+- [图标滑动效果](https://github.com/cary-mao/small/tree/master/src/icon_slide_effect)
