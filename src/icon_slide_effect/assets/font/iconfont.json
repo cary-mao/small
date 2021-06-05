@@ -1,0 +1,30 @@
+{
+  "id": "2593824",
+  "name": "small_icon_slide",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "911017",
+      "name": "phone",
+      "font_class": "phone",
+      "unicode": "e61a",
+      "unicode_decimal": 58906
+    },
+    {
+      "icon_id": "1802971",
+      "name": "location",
+      "font_class": "location",
+      "unicode": "e612",
+      "unicode_decimal": 58898
+    },
+    {
+      "icon_id": "18967152",
+      "name": "email",
+      "font_class": "email",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    }
+  ]
+}
