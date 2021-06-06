@@ -31,3 +31,4 @@ https://cary-mao.github.io/small/
 - [图标滑动效果](https://github.com/cary-mao/small/tree/master/src/icon_slide_effect)
 - [简单圆形加载动画](https://github.com/cary-mao/small/tree/master/src/simple_circle_loading)
 - [背景固定滚动效果](https://github.com/cary-mao/small/tree/master/src/background_scrolling_effect)
+- [悬停背景幻灯片过渡](https://github.com/cary-mao/small/tree/master/src/hover_slide_img)
