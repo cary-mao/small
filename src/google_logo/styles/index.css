@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 130px;
+  height: 130px;
+
+  border-radius: 50%;
+  border-top: 50px solid #ea4335;
+  border-right: 50px solid #4285f4;
+  border-bottom: 50px solid #34a853;
+  border-left: 50px solid #fbb605;
+}
+
+.logo::before {
+  content: '';
+
+  position: absolute;
+  top: -116px;
+  right: -117px;
+
+  border-top: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-bottom: 100px solid #fff;
+  border-left: 100px solid transparent;
+}
+
+.logo::after {
+  content: '';
+
+  position: absolute;
+  top: 36px;
+  left: 78px;
+
+  width: 100px;
+  height: 50px;
+
+  background-color: #4285f4;
+  border-radius: 0 100px 0px 0;
+}
