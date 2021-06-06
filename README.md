@@ -30,3 +30,4 @@ https://cary-mao.github.io/small/
 - [导航菜单悬停效果](https://github.com/cary-mao/small/tree/master/src/nav_menu_hover_effect)
 - [图标滑动效果](https://github.com/cary-mao/small/tree/master/src/icon_slide_effect)
 - [简单圆形加载动画](https://github.com/cary-mao/small/tree/master/src/simple_circle_loading)
+- [背景固定滚动效果](https://github.com/cary-mao/small/tree/master/src/background_scrolling_effect)
