@@ -33,3 +33,4 @@ https://cary-mao.github.io/small/
 - [背景固定滚动效果](https://github.com/cary-mao/small/tree/master/src/background_scrolling_effect)
 - [悬停背景幻灯片过渡](https://github.com/cary-mao/small/tree/master/src/hover_slide_img)
 - [谷歌 logo](https://github.com/cary-mao/small/tree/master/src/google_logo)
+- [竖直霓虹灯](https://github.com/cary-mao/small/tree/master/src/neno_vertical_lights)
