@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  background-color: #ff8d8d;
+}
+
+.zigzag {
+  position: absolute;
+  top: 50%;
+
+  width: 100%;
+  height: 50%;
+
+  background-color: #fff;
+}
+
+.zigzag::before {
+  content: '';
+
+  position: absolute;
+  display: block;
+  
+  width: 100%;
+  height: 15px;
+
+  background: linear-gradient(
+    /* x轴开始旋转 */
+    -45deg,
+    /* 0-33.3% transparent */
+    transparent 33.33%,
+    /* 33-3%-66.66% #ff8d8d */
+    #ff8d8d 33.3%,
+    #ff8d8d 66.66%,
+    /* 66.66%-100% transparent */
+    transparent 66.66%
+  ), linear-gradient(
+    45deg,
+    transparent 33.33%,
+    #ff8d8d 33.3%,
+    #ff8d8d 66.66%,
+    transparent 66.66%
+  );
+  transform: rotate(180deg);
+
+  /* 核心：将linear-gradient背景看成一张图片，又因为background-repeat铺满整个容器 */
+  /* 而30px 60px的bgsize， 就是将背景缩小到30*60，而height只要了背景的15高度部分，“压缩”成了三角锯齿，可以再chrome中改变background-size的值感受一下*/
+  background-size: 30px 60px;
+}
