@@ -1,0 +1,94 @@
+body {
+  padding: 0;
+  margin: 0;
+
+  width: 100%;
+  height: 100vh;
+
+  background-color: #000;
+}
+
+.wrapper {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.wrapper::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.light {
+  position: relative;
+  float: left;
+
+  width: 10px;
+  height: 300px;
+
+  background-color: #fff;
+}
+
+.light + .light {
+  margin-left: 110px;
+}
+
+.light::before {
+  content: '';
+
+  position: absolute;
+  left: 0;
+  top: -50px;
+
+  width: 10px;
+  height: 50px;
+  
+  border-radius: 4px 4px 0 0;
+  background-color: #262626;
+}
+
+.light::after {
+  content: '';
+
+  position: absolute;
+  left: 0;
+  bottom: -50px;
+
+  width: 10px;
+  height: 50px;
+  
+  border-radius: 0 0 4px 4px;
+  background-color: #262626;
+}
+
+.light:nth-child(1) {
+  background-color: #ffd0d0;
+  box-shadow: 0 0 80px #f00, 0 0 80px #f00, 0 0 80px #f00;
+}
+
+.light:nth-child(2) {
+  background-color: #ffffd7;
+  box-shadow: 0 0 80px #ff0, 0 0 80px #ff0, 0 0 80px #ff0;
+}
+
+.light:nth-child(3) {
+  background-color: #bffbbf;
+  box-shadow: 0 0 80px #0f0, 0 0 80px #0f0, 0 0 80px #0f0;
+}
+
+.light:nth-child(4) {
+  background-color: #bebeff;
+  box-shadow: 0 0 80px #00f, 0 0 80px #00f, 0 0 80px #00f;
+}
+
+.light:nth-child(5) {
+  background-color: #ffadff;
+  box-shadow: 0 0 80px #f0f, 0 0 80px #f0f, 0 0 80px #f0f;
+}
+
+.light:nth-child(6) {
+  background-color: #ffd0d0;
+  box-shadow: 0 0 80px #f00, 0 0 80px #f00, 0 0 80px #f00;
+}
