@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  width: 100%;
+  height: 100vh;
+  background-color: #f0ff7b;
+
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.box {
+  padding: 10px 15px;
+
+  width: 300px;
+
+  border: 1px solid rgba(0,0,0,.2);
+
+  transition: border .5s;
+}
+
+.box::before {
+  content: '';
+
+  /* 一直居中，才在中间扩大 */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  
+  width: 0;
+  height: 0;
+
+  background-color: #42da56;
+  transition: .5s;
+}
+
+.box:hover::before {
+  width: 100%;
+  height: 100%;
+}
+
+.box:hover {
+  color: #fff;
+  transition-delay: .5s;
+  border: 10px solid #fff;
+}
