@@ -35,3 +35,4 @@ https://cary-mao.github.io/small/
 - [谷歌 logo](https://github.com/cary-mao/small/tree/master/src/google_logo)
 - [竖直霓虹灯](https://github.com/cary-mao/small/tree/master/src/neno_vertical_lights)
 - [锯齿背景](https://github.com/cary-mao/small/tree/master/src/zigzag)
+- [悬停容器居中缩放效果](https://github.com/cary-mao/small/tree/master/src/hover_container_effect)
