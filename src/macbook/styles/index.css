@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* 显示屏 */
+.macbook {
+  width: 350px;
+  height: 200px;
+
+  background-color: #000;
+  border-bottom: 30px solid #d8d8d8;
+  border-radius: 10px;
+}
+
+/* 显示屏和底座之间的连接柱 */
+.macbook::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: perspective(100px) translate(-50%, 50%) rotateX(25deg) skewX(7deg);
+  z-index: -1;
+
+  width: 70px;
+  height: 60px;
+
+  background-color: #bdbdbd;
+}
+
+/* 底座 */
+.macbook::after {
+  content: '';
+  position: absolute;
+  bottom: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+
+  width: 140px;
+  height: 15px;
+
+  background-color: #d8d8d8;
+}
+
+/* logo */
+.macbook img {
+  position: absolute;
+  left: 50%;
+  top: -100px;
+  transform: translateX(-50%) scale(.02);
+}
+
+/* 阴影容器 */
+.overlay {
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+
+  /* 截取阴影 */
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+/* 阴影 */
+.overlay::before {
+  content: '';
+  position: absolute;
+  left: -10px;
+  top: 0;
+
+  width: 50%;
+  height: 100%;
+
+  transform: skewX(-5deg);
+  background-color: rgba(255, 255, 255, .5);
+}
