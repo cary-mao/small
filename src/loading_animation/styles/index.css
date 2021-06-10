@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  margin: 0;
+  padding: 0;
+
+  width: 200px;
+  height: 200px;
+
+  font-size: 20px;
+  text-align: center;
+  line-height: 200px;
+  /* 核心1：移出隐藏 */
+  overflow: hidden;
+}
+
+.loader h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+
+  margin: 0;
+  padding: 0;
+
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.loader::before {
+  content: '';
+
+  position: absolute;
+  top: 0;
+
+  width: 50%;
+  height: 150%;
+
+  background-color: #0060da;
+  /* 核心2：动画时间不同，产生错位效果 */
+  animation: animate1 2s linear infinite;
+}
+
+.loader::after {
+  content: '';
+
+  position: absolute;
+  top: 0;
+
+  width: 50%;
+  height: 150%;
+
+  background-color: #e6005e;
+  animation: animate2 1s linear infinite;
+}
+
+/* 从右下到左上 */
+@keyframes animate1 {
+  0% {
+    transform: translateY(100%);
+    left: 100%;
+  }
+  100% {
+    transform: translateY(-100%);
+    left: -50%;
+  }
+}
+
+/* 从头左下到右上 */
+@keyframes animate2 {
+  0% {
+    transform: translateY(100%);
+    left: -50%;
+  }
+  100% {
+    transform: translateY(-100%);
+    left: 100%;
+  }
+}
