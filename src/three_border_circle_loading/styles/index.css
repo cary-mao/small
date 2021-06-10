@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* 核心：圆的速度和转向不同，形成cuowei */
+span:nth-child(1) {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 60px;
+  height: 60px;
+
+  border: 6px solid #262626;
+  border-top: 6px solid transparent;
+  border-radius: 50%;
+  animation: animate2 2s linear infinite;
+}
+
+span:nth-child(2) {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 100px;
+  height: 100px;
+
+  border: 6px solid #262626;
+  border-bottom: 6px solid transparent;
+  border-radius: 50%;
+  animation: animate1 1s linear infinite;
+}
+
+span:nth-child(3) {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 20px;
+  height: 20px;
+
+  border: 6px solid #262626;
+  border-bottom: 6px solid transparent;
+  border-radius: 50%;
+  animation: animate1 1s linear infinite;
+}
+
+@keyframes animate1 {
+  0% {
+    transform: translate(-50%, -50%) rotate(0);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@keyframes animate2 {
+  0% {
+    transform: translate(-50%, -50%) rotate(0);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
