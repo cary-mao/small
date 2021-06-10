@@ -35,7 +35,8 @@ span::after {
   height: 10px;
 
   background-color: #ff0;
-  /* 核心1：色相，计算后相交的部分变成黑色，不太懂 */
+  /* 核心1：色相，计算后相交的部分变成黑色 参考：https://www.zhangxinxu.com/wordpress/2015/05/css3-mix-blend-mode-background-blend-mode/ */
+  /* 使用底层元素（边框黄色）的亮度和饱和度，上层元素（a标签）颜色（背景黑色）色调 --> 黑色 */
   mix-blend-mode: hue;
   transition: 1s;
 }
