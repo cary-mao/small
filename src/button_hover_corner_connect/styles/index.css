@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #262626;
+}
+
+a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 180px;
+  height: 50px;
+  line-height: 50px;
+
+  background-color: #262626;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ff0;
+  text-decoration: none;
+  font-size: 20px;
+  letter-spacing: 4px;
+}
+
+a::before,
+a::after,
+span::before,
+span::after {
+  content: '';
+  position: absolute;
+  
+  width: 10px;
+  height: 10px;
+
+  background-color: #ff0;
+  /* 核心1：色相，计算后相交的部分变成黑色，不太懂 */
+  mix-blend-mode: hue;
+  transition: 1s;
+}
+
+a::before {
+  top: -2px;
+  left: -2px;
+}
+
+a::after {
+  top: -2px;
+  right: -2px;
+}
+
+span::before {
+  bottom: -2px;
+  left: -2px;
+}
+
+span::after {
+  bottom: -2px;
+  right: -2px;
+}
+
+a:hover::before,
+a:hover::after,
+a:hover span::before,
+a:hover span::after {
+  /* 核心2：（边长 + 边角偏移） / 2 */
+  width: calc((180px + 4px) / 2);
+  height: calc((50px + 4px) / 2);
+}
