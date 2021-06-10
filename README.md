@@ -39,3 +39,4 @@ https://cary-mao.github.io/small/
 - [3d 倾斜按钮](https://github.com/cary-mao/small/tree/master/src/3d_skewed_btn)
 - [苹果笔记本显示屏](https://github.com/cary-mao/small/tree/master/src/macbook)
 - [矩形对角错位加载动画](https://github.com/cary-mao/small/tree/master/src/loading_animation)
+- [三边框圆加载动画](https://github.com/cary-mao/small/tree/master/src/three_border_circle_loading)
