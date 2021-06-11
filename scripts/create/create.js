@@ -3,7 +3,7 @@ const shell = require('shelljs')
 const path = require('path')
 const { source_dir } = require('../../.smallrc')
 const prettier = require('prettier')
-const { genPathRelativeFn } = require('../utils')
+const { genPathRelativeFn, inquirer: inquirerUtils } = require('../utils')
 
 module.exports = function create (name, root = process.cwd()) {
   inquirer.prompt([
@@ -12,7 +12,7 @@ module.exports = function create (name, root = process.cwd()) {
       message: 'project name',
       default: name,
       validate (value) {
-        notEmpty.call(this, value, function () {
+        inquirerUtils.notEmpty.call(this, value, function () {
           notProjectExsited.call(this, path.resolve(root, source_dir, value))
         });
       }
@@ -79,16 +79,4 @@ function injectScripts (string) {
 
 function injectStyles (string) {
   return string.replace(/<head>([\w\W]*)<\/head>/, `<head>$1<link rel="stylesheet" href="./styles/index.css" /></head>`)
-}
-
-function notEmpty (value, cb) {
-  const done = this.async()
-
-  if (value === '') {
-    done(`project's name can't empty.`)
-  } else if (cb) {
-    cb.call(this)
-  } else {
-    done(null, true)
-  }
 }

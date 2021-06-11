@@ -5,3 +5,17 @@ exports.genPathRelativeFn = function genPathRelativeFn (pathPrefix) {
     return path.resolve(pathPrefix, p)
   }
 }
+
+exports.inquirer = {
+  notEmpty (value, cb) {
+    const done = this.async()
+  
+    if (value === '') {
+      done(`project's name can't empty.`)
+    } else if (typeof cb === 'function') {
+      cb.call(this)
+    } else {
+      done(null, true)
+    }
+  }
+}
