@@ -1,0 +1,44 @@
+{
+  "id": "2608917",
+  "name": "small",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "348997",
+      "name": "twitter",
+      "font_class": "twitter",
+      "unicode": "ecc1",
+      "unicode_decimal": 60609
+    },
+    {
+      "icon_id": "836537",
+      "name": "facebook",
+      "font_class": "facebook",
+      "unicode": "e6e0",
+      "unicode_decimal": 59104
+    },
+    {
+      "icon_id": "836626",
+      "name": "google-plus",
+      "font_class": "googleplus",
+      "unicode": "e721",
+      "unicode_decimal": 59169
+    },
+    {
+      "icon_id": "1261892",
+      "name": "linkedin",
+      "font_class": "linkedin",
+      "unicode": "e6bf",
+      "unicode_decimal": 59071
+    },
+    {
+      "icon_id": "3876071",
+      "name": "instagram",
+      "font_class": "instagram",
+      "unicode": "e607",
+      "unicode_decimal": 58887
+    }
+  ]
+}
