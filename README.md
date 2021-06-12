@@ -41,3 +41,4 @@ https://cary-mao.github.io/small/
 - [矩形对角错位加载动画](https://github.com/cary-mao/small/tree/master/src/loading_animation)
 - [三边框圆加载动画](https://github.com/cary-mao/small/tree/master/src/three_border_circle_loading)
 - [悬停边角框连接动画按钮](https://github.com/cary-mao/small/tree/master/src/button_hover_corner_connect)
+- [悬停滑动图标切换](https://github.com/cary-mao/small/tree/master/src/icon_hover_slide_icon)
