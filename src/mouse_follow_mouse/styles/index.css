@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #eed9eba9;
+
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  /* 导致offset出错 */
+  /* position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); */
+
+  display: grid;
+  grid-template-columns: repeat(7, 40px);
+  grid-template-rows: repeat(7, 40px);
+  grid-row-gap: 1.5em;
+  grid-column-gap: 1.5em;
+}
+
+.item {
+  position: relative;
+  background-color: rgb(40, 40, 40);
+  border-left: 10px solid #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,.5);
+  border-radius: 5px;
+}
+
+.item::before,
+.item::after {
+  content: '';
+  display: block;
+
+  position: absolute;
+  left: 20px;
+
+  width: 5px;
+  height: 5px;
+
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.item::before {
+  top: 25%;
+}
+
+.item::after {
+  bottom: 25%;
+}
