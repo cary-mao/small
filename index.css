@@ -1,0 +1,163 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+a {
+  font-size: 1.2em;
+  color: black;
+}
+
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+#menu h1 {
+  text-align: center;
+}
+
+#menu > ul {
+  padding: 10px 15px;
+  column-count: 6;
+  column-gap: 5px;
+}
+
+#menu a:link {
+  color: black;
+}
+
+#menu a:visited {
+  color: gray;
+}
+
+#menu a:hover {
+  color: lightblue;
+}
+
+#menu.thumbnail ul {
+  column-count: unset;
+}
+
+nav {
+  width: 100%;
+  padding: 0 1em;
+  background-color: #262626;
+}
+
+nav .nav_box {
+  float: right;
+}
+
+nav li {
+  float: left;
+}
+
+nav a {
+  position: relative;
+  display: inline-block;
+  color: #fff;
+  font-size: 14px;
+  padding: .8em;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+nav .look::before {
+  content: '';
+  position: absolute;
+  top: 19px;
+  right: 0px;
+  border-top: 4px solid #fff;
+  border-right: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  border-left: 4px solid transparent;
+}
+
+.pagenation {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.pagenation li {
+  float: left;
+  padding: .4em;
+  cursor: pointer;
+  border: 1px solid #ccc;
+}
+
+.pagenation li + li {
+  border-left: 0;
+}
+
+.pagenation_btn-active {
+  background-color: #ff0;
+}
+
+.iframe_box {
+  display: none;
+}
+
+.iframe_box-active {
+  display: block;
+}
+
+.iframe_box iframe {
+  width: 100%;
+  height: 100vh;
+}
+
+.dropdown {
+  position: absolute;
+  display: none;
+  border: 1px solid #ccc;
+}
+
+.dropdown li {
+  width: 100%;
+  color: #262626;
+  background-color: #f5f5f5;
+  text-align: center;
+  padding: 10px 15px;
+}
+
+.dropdown li + li {
+  border-top: 1px dotted #ccc;
+}
+
+.dropdown li:hover {
+  background-color: lightblue;
+  color: #fff;
+}
+
+.dropdown-active {
+  display: block;
+}
+
+.look .dropdown {
+  width: 80px;
+  right: -16px;
+  top: 100%;
+}

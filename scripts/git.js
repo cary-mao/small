@@ -51,6 +51,6 @@ exports.commit = function commit () {
   ]).then(({
     type, scope, desc
   }) => {
-    shell.exec(`git commit -m ${type}(${scope}): ${desc}`)
+    shell.exec(`git commit -m "${type}(${scope}): ${desc}"`)
   })
 }

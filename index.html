@@ -4,52 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Small Project</title>
-    <style>
-      body {
-        margin: 0;
-        padding: 0;
-      }
-
-      html,
-      body {
-        width: 100%;
-        height: 100%;
-      }
-
-      body {
-        display: flex;
-        justify-content: center;
-        background-color: antiquewhite;
-      }
-
-      h1 {
-        font-size: 3em;
-      }
-
-      a {
-        font-size: 1.2em;
-        color: black;
-      }
-
-      a:link {
-        color: black;
-      }
-
-      a:visited {
-        color: gray;
-      }
-
-      a:hover {
-        color: lightblue;
-      }
-
-      #menu {
-        margin-top: 40px;
-      }
-    </style>
+    <link rel="stylesheet" href="./index.css">
   </head>
 
   <body>
+    <nav class="clearfix">
+      <div class="nav_box">
+        <ul>
+          <li><a class="look">查看</a></li>
+        </ul>
+      </div>
+    </nav>
     <section id="menu">
       <h1>Small Project</h1>
       <ul>
@@ -111,15 +76,23 @@
         <li>
           <a href="./src/hover_slide_img/index.html">悬停背景幻灯片过渡</a>
         </li>
-        <li><a href="./src/google_logo/index.html">谷歌logo</a></li>
-        <li><a href="./src/neno_vertical_lights/index.html">竖直霓虹灯</a></li>
-        <li><a href="./src/zigzag/index.html">锯齿背景</a></li>
+        <li>
+          <a href="./src/google_logo/index.html">谷歌logo</a>
+        </li>
+        <li>
+          <a href="./src/neon_vertical_lights/index.html">竖直霓虹灯</a>
+        </li>
+        <li>
+          <a href="./src/zigzag/index.html">锯齿背景</a>
+        </li>
         <li>
           <a href="./src/hover_container_effect/index.html"
             >悬停容器居中缩放效果</a
           >
         </li>
-        <li><a href="./src/3d_skewed_btn/index.html">3d倾斜按钮</a></li>
+        <li>
+          <a href="./src/3d_skewed_btn/index.html">3d倾斜按钮</a>
+        </li>
         <li><a href="./src/macbook/index.html">苹果笔记本显示屏</a></li>
         <li>
           <a href="./src/loading_animation/index.html">矩形对角错位加载动画</a>
@@ -136,5 +109,7 @@
         </li>
       </ul>
     </section>
+
+    <script src="./index.js"></script>
   </body>
 </html>
