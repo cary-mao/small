@@ -1,0 +1,54 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+.drawer {
+  position: relative;
+  float: left;
+  width: 220px;
+  height: 100vh;
+  background-color: blue;
+
+  transition: .5s;
+}
+
+.drawer_switch {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(100%, -50%);
+
+  width: 20px;
+  height: 50px;
+  line-height: 50px;
+
+  color: #fff;
+  border: 1px solid #262626;
+  border-left: 0;
+  background-color: inherit;
+  opacity: .2;
+  cursor: pointer;
+}
+
+.drawer_switch:hover {
+  opacity: 1;
+}
+
+.drawer-open {
+  /* transform: translateX(-100%); */
+  margin-left: calc(-220px);
+}
+
+.content {
+  position: relative;
+  z-index: -1;
+  transition: .5s;
+  height: 100vh;
+  background-color: yellow;
+  overflow: hidden;
+}
