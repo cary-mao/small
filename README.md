@@ -44,3 +44,13 @@ https://cary-mao.github.io/small/
 - [悬停滑动图标切换](https://github.com/cary-mao/small/tree/master/src/icon_hover_slide_icon)
 - [老鼠眼睛鼠标跟随效果](https://github.com/cary-mao/small/tree/master/src/mouse_follow_mouse)
 - [抽屉侧边栏](https://github.com/cary-mao/small/tree/master/src/drawer)
+
+# scripts
+
+创建一个新项目/demo：`scl create <project_name>`  
+添加项目文档：`scl docs <project_name> <project_title>`  
+git 提交：`git add .`和`scl commit`
+
+# VSCode Preview
+
+安装`Preview on Web Server`插件，在目录树中选中根目录中的`index.html`，按`ctrl+shift+l`打开浏览器或者`ctrl+shift+v`右侧打开
