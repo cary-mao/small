@@ -1,0 +1,42 @@
+/* 重点在于img的宽高固定，在img上面加一层遮罩，加overflow: hidden即可实现效果 */
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 400px;
+  height: 400px;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.wrapper img {
+  display: block;
+  width: 400px;
+  height: 400px;
+}
+
+.wrapper > div {
+  position: absolute;
+  height: 100%;
+  overflow: hidden;
+}
+
+.wrapper div:first-child {
+  z-index: 1;
+  width: 0;
+  border-right: 2px solid #262626;
+  transition: .5s;
+}
+
+.wrapper div:last-child {
+  filter: grayscale(100%);
+}
+
+.wrapper:hover div:first-child {
+  width: 100%;
+}
