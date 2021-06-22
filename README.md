@@ -45,6 +45,7 @@ https://cary-mao.github.io/small/
 - [老鼠眼睛鼠标跟随效果](https://github.com/cary-mao/small/tree/master/src/mouse_follow_mouse)
 - [抽屉侧边栏](https://github.com/cary-mao/small/tree/master/src/drawer)
 - [悬停图片颜色滤波](https://github.com/cary-mao/small/tree/master/src/img_color_filter_hover)
+- [在圆形路径移动圆](https://github.com/cary-mao/small/tree/master/src/move_circle_in_circular_path)
 
 # scripts
 
