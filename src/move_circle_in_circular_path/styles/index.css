@@ -1,0 +1,67 @@
+/**
+  核心在于引导线旋转功能的实现，小球是在引导线的基础上定位的。
+*/
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.circle {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 400px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 2px solid #262626;
+}
+
+.line {
+  position: absolute;
+  top: 50%;
+  width: calc(50% - 1px);
+  height: 2px;
+  background-color: #262626;
+  animation: animate 5s linear infinite;
+  transform-origin: right;
+}
+
+@keyframes animate {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.line::before {
+  content: '';
+  display: block;
+
+  position: absolute;
+  top: -20px;
+  left: -11px;
+
+  width: 20px;
+  height: 20px;
+  background-color: orangered;
+  border-radius: 50%;
+}
+
+.line::after {
+  content: '';
+  display: block;
+
+  position: absolute;
+  /* top为0，会使圆心球动 */
+  top: 0px;
+  right: -11px;
+
+  width: 20px;
+  height: 20px;
+  background-color: orangered;
+  border-radius: 50%;
+}
