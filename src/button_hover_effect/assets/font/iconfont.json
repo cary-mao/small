@@ -1,0 +1,16 @@
+{
+  "id": "2608917",
+  "name": "small",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "16800307",
+      "name": "Arrow Right 1 - 24px",
+      "font_class": "ArrowRight1-24px",
+      "unicode": "e610",
+      "unicode_decimal": 58896
+    }
+  ]
+}
