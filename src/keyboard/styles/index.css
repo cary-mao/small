@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.keyboard {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  min-width: 1085px;
+  padding: 20px;
+  background-color: rgb(56, 56, 56);
+  border-radius: 10px;
+
+  display: grid;
+  grid-template-columns: repeat(30, 30px);
+  grid-template-rows: repeat(5, 60px);
+  grid-gap: 5px;
+  box-sizing: border-box;
+}
+
+.key {
+  background-color: rgb(243, 243, 243);
+  border-radius: 5px;
+  font: 500 20px '';
+  text-align: center;
+  border: 2px solid black;
+
+  padding: 17px;
+
+  grid-column: span 2;
+}
+
+.key:hover {
+  box-shadow: inset 0 0 7px rgba(0, 0, 0, .8);
+}
+
+.sp3 {
+  grid-column: span 3;
+}
+
+.sp4 {
+  grid-column: span 4;
+}
+
+.sp5 {
+  grid-column: span 5;
+}
+
+.sp12 {
+  grid-column: span 12;
+}
+
+.default {
+  background-color: rgb(180, 180, 180);
+}
+
+.highlight {
+  background-color: rgb(250, 140, 70);
+}
+
+.cmd {
+  font-size: 14px;
+}
