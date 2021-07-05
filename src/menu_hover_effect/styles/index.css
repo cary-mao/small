@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+  transition: .5s;
+}
+
+ul li a {
+  position: relative;
+  display: block;
+  text-align: center;
+  margin: 0 25px;
+  color: #262626;
+  font-size: 40px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+ul:hover li {
+  opacity: .2;
+  filter: blur(2px);
+}
+
+ul li:hover {
+  opacity: 1;
+  filter: blur(0);
+}
