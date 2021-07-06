@@ -51,6 +51,7 @@ https://cary-mao.github.io/small/
 - [键盘](https://github.com/cary-mao/small/tree/master/src/keyboard)
 - [圆形边框动画](https://github.com/cary-mao/small/tree/master/src/circle_border_animation)
 - [菜单悬停模糊透明效果](https://github.com/cary-mao/small/tree/master/src/menu_hover_effect)
+- [点击图标上下滑动切换](https://github.com/cary-mao/small/tree/master/src/animate_toggle_icon)
 
 # scripts
 
