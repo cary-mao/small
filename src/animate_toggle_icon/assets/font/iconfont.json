@@ -1,0 +1,23 @@
+{
+  "id": "2608917",
+  "name": "small",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "431876",
+      "name": "menu",
+      "font_class": "menu",
+      "unicode": "e761",
+      "unicode_decimal": 59233
+    },
+    {
+      "icon_id": "836442",
+      "name": "close",
+      "font_class": "close",
+      "unicode": "e693",
+      "unicode_decimal": 59027
+    }
+  ]
+}
