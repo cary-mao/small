@@ -11,7 +11,7 @@ exports.inquirer = {
     const done = this.async()
   
     if (value === '') {
-      done(`project's name can't empty.`)
+      done(`value can't empty.`)
     } else if (typeof cb === 'function') {
       cb.call(this)
     } else {

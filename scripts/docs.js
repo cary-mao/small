@@ -14,7 +14,7 @@ module.exports = function docs (root, name, text) {
   homeString = prettier.format(homeString, { parser: 'html' })
 
   let readmeString = shell.cat(readmePath).stdout
-  let scriptTitleIndex = readmeString.indexOf('\n# scripts')
+  let scriptTitleIndex = readmeString.indexOf('\n# 本地使用')
   readmeString = readmeString.substring(0, scriptTitleIndex) + `- [${text}](https://github.com/cary-mao/small/tree/master/${source_dir}/${name})\n` + readmeString.substring(scriptTitleIndex+1)
   readmeString = prettier.format(readmeString, { parser: 'markdown' })
 

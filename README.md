@@ -53,6 +53,15 @@ https://cary-mao.github.io/small/
 - [菜单悬停模糊透明效果](https://github.com/cary-mao/small/tree/master/src/menu_hover_effect)
 - [点击图标上下滑动切换](https://github.com/cary-mao/small/tree/master/src/animate_toggle_icon)
 - [按钮悬停箭头动画](https://github.com/cary-mao/small/tree/master/src/button_hover_arrow_animation)
+- [装水杯动画](https://github.com/cary-mao/small/tree/master/src/full_water_cup)
+
+# 本地使用
+
+```
+git clone git@github.com:cary-mao/small.git
+npm install
+npm link
+```
 
 # scripts
 

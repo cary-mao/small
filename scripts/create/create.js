@@ -4,6 +4,7 @@ const path = require('path')
 const { source_dir } = require('../../.smallrc')
 const prettier = require('prettier')
 const { genPathRelativeFn, inquirer: inquirerUtils } = require('../utils')
+const docs = require('../docs')
 
 module.exports = function create (name, root = process.cwd()) {
   inquirer.prompt([
@@ -18,17 +19,35 @@ module.exports = function create (name, root = process.cwd()) {
       }
     },
     {
+      type: 'confirm',
       name: 'hasStyles',
       message: 'need styles?(y/n)',
       default: 'y'
     },
     {
+      type: 'confirm',
       name: 'hasScripts',
       message: 'need scripts?(y/n)',
       default: 'y'
+    },
+    {
+      type: 'confirm',
+      name: 'hasDocs',
+      message: 'add docs?(y/n)',
+      default: 'y'
+    },
+    {
+      name: 'docsName',
+      message: 'enter docs name',
+      when ({hasDocs}) {
+        return hasDocs
+      },
+      validate (value) {
+        inquirerUtils.notEmpty.call(this, value);
+      }
     }
   ]).then(answers => {
-    const {name, hasStyles, hasScripts} = answers
+    const {name, hasStyles, hasScripts, hasDocs, docsName} = answers
     const pathRelativeName = genPathRelativeFn(path.resolve(root, source_dir, name))
 
     shell.mkdir(pathRelativeName())
@@ -37,17 +56,20 @@ module.exports = function create (name, root = process.cwd()) {
     shell.touch(htmlPath)
     const shellString = shell.cat(templatePath)
     let templateString = injectTitle(shellString.stdout, name)
-    if (hasScripts === 'y') {
+    if (hasScripts) {
       const scriptsDir = pathRelativeName('scripts')
       shell.mkdir(scriptsDir)
       shell.touch(path.resolve(scriptsDir, 'index.js'))
       templateString = injectScripts(templateString)
     }
-    if (hasStyles === 'y') {
+    if (hasStyles) {
       const stylesDir = pathRelativeName('styles')
       shell.mkdir(stylesDir)
       shell.touch(path.resolve(stylesDir, 'index.css'))
       templateString = injectStyles(templateString)
+    }
+    if (hasDocs) {
+      docs(path.resolve(__dirname, '../..'), name, docsName)
     }
 
     templateString = prettier.format(templateString, {
