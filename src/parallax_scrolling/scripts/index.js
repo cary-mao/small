@@ -18,3 +18,18 @@ window.addEventListener('scroll', () => {
   road.style.top = value * 0.15 + 'px';
   text.style.top = value * 1 + 'px';
 })
+
+// window.addEventListener('resize', () => {
+//   const moon = document.getElementById('moon')
+//   const width = moon.offsetWidth
+//   const height = moon.offsetHeight
+//   const radio = width / height
+
+//   console.log(radio)
+
+//   if (radio < 1.4) {
+//     moon.style.objectFit = 'contain'
+//   } else {
+//     moon.style.objectFit = 'cover'
+//   }
+// })

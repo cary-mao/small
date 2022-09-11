@@ -62,3 +62,28 @@ section img {
 #road {
   z-index: 2;
 }
+
+/* fix bug: 当moon的宽高比小于1.3时，会有部分被裁剪。这里取1.4为了月亮与左边始终保存一定空间 */
+@media (max-aspect-ratio: 7/5) {
+  #moon {
+    object-fit: contain;
+  }
+}
+
+@media (max-width: 1200px) {
+  #text {
+    font-size: 4em;
+  }
+}
+
+@media (max-width: 750px) {
+  #text {
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 640px) {
+  #text {
+    display: none;
+  }
+}
