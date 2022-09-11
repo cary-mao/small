@@ -33,7 +33,8 @@ body {
   grid-column: span 2;
 }
 
-.key:hover {
+.key:hover,
+.key-active {
   box-shadow: inset 0 0 7px rgba(0, 0, 0, .8);
 }
 
@@ -63,4 +64,40 @@ body {
 
 .cmd {
   font-size: 14px;
+}
+
+.key-tip {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 100px;
+  height: 100px;
+  top: 20px;
+  left: 50%;
+  margin-left: -50px;
+  background-color: #000;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.key-tip-active { 
+  opacity: .5;
+}
+
+.key-tip .key {
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  border: 0;
+  line-height: 50px;
+  font-size: 14px;
+}
+
+.key-tip .sp12 {
+  width: 80px;
+}
+
+.key-tip .key:hover {
+  box-shadow: none;
 }
