@@ -1,0 +1,84 @@
+/**
+    核心：animation-delay取负值时动画会立即执行，并跳过负值执行周期
+*/
+body {
+    margin: 0;
+    padding: 0;
+    background: #222430;
+}
+
+.loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+    height: 150px;
+    /* background-color: #0c1025; */
+}
+
+.loader span {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 4px;
+    animation: animate 2s linear infinite;
+}
+
+.loader span:nth-child(1) {
+    background-color: #fd3f39;
+    animation-delay: 0s;
+}
+
+.loader span:nth-child(2) {
+    background-color: #ffcb2f;
+    /* 2s/3等于0.667s */
+    /* 黄色一开始就已经走了1/3 */
+    animation-delay: -0.667s;
+}
+
+.loader span:nth-child(3) {
+    background-color: #53d68a;
+    /* 绿色一开始就已经走了2/3 */
+    animation-delay: -1.33s;
+}
+
+@keyframes animate {
+    0% {
+        top: 0;
+        left: 0;
+    }
+    12.5% {
+        top: 0;
+        left: 50%;
+    }
+    25% {
+        top: 0;
+        left: 50%;
+    }
+    37.5% {
+        top: 50%;
+        left: 50%;
+    }
+    50% {
+        top: 50%;
+        left: 50%;
+    }
+    62.5% {
+        top: 50%;
+        left: 0;
+    }
+    75% {
+        top: 50%;
+        left: 0;
+    }
+    87.5% {
+        top: 0;
+        left: 0;
+    }
+    100% {
+        top: 0;
+        left: 0;
+    }
+}

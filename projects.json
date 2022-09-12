@@ -45,5 +45,6 @@
   "animate_toggle_icon": "点击图标上下滑动切换",
   "button_hover_arrow_animation": "按钮悬停箭头动画",
   "full_water_cup": "装水杯动画",
-  "wave_ball_loading": "球型水波加载动画"
+  "wave_ball_loading": "球型水波加载动画",
+  "block_move_loading": "移动快加载动画"
 }
