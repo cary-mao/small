@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #262626;
+}
+
+.cup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+    height: 180px;
+    border: 6px solid #262626;
+    border-top: 2px solid transparent;
+    border-radius: 15px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-image: url(../assets/water.png);
+    background-repeat: repeat-x;
+    box-shadow: 0 0 0 6px #fff, 0 20px 35px rgba(0, 0, 0, .1);
+    animation: animate 10s linear infinite;
+}
+
+.cup::before {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 80px;
+    border: 6px solid #fff;
+    right: -68px;
+    top: 30px;
+    border-top-right-radius: 35px;
+    border-bottom-right-radius: 35px
+}
+
+@keyframes animate {
+    0% {
+      background-position: 0 150px;
+    }
+    10% {
+      background-position: 0 150px;
+    }
+    40% {
+      background-position: 1000px 50px;
+    }
+    80% {
+      background-position: 2000px 0px;
+    }
+    100% {
+      background-position: 2500px 150px;
+    }
+  }
