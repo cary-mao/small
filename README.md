@@ -7,16 +7,15 @@
 https://cary-mao.github.io/small/
 
 # 代码目录
-
 - [简单视差滚动](https://github.com/cary-mao/small/tree/master/src/parallax_scrolling)
-- [全屏视频 banner](https://github.com/cary-mao/small/tree/master/src/full_screen_video)
-- [css3 滚动转换](https://github.com/cary-mao/small/tree/master/src/transform_by_scroll)
+- [全屏视频banner](https://github.com/cary-mao/small/tree/master/src/full_screen_video)
+- [css3滚动转换](https://github.com/cary-mao/small/tree/master/src/transform_by_scroll)
 - [全屏导航菜单](https://github.com/cary-mao/small/tree/master/src/full_screen_menu_overlay)
 - [盒子阴影加载动画](https://github.com/cary-mao/small/tree/master/src/box_shadow_loading)
-- [css3 反向悬停](https://github.com/cary-mao/small/tree/master/src/reverse_hover_translate)
+- [css3反向悬停](https://github.com/cary-mao/small/tree/master/src/reverse_hover_translate)
 - [垂直水平居中文字](https://github.com/cary-mao/small/tree/master/src/xy_align_center_text)
 - [边框形状变换](https://github.com/cary-mao/small/tree/master/src/hover_border_shape_change)
-- [css 图标悬停内圆效果](https://github.com/cary-mao/small/tree/master/src/icon_hover_inner_circle)
+- [css图标悬停内圆效果](https://github.com/cary-mao/small/tree/master/src/icon_hover_inner_circle)
 - [文本透明效果](https://github.com/cary-mao/small/tree/master/src/transparent_text_effect)
 - [多列瀑布流布局](https://github.com/cary-mao/small/tree/master/src/column_masonry_layout)
 - [悬停分割图片](https://github.com/cary-mao/small/tree/master/src/split_image_on_hover)
@@ -32,11 +31,11 @@ https://cary-mao.github.io/small/
 - [简单圆形加载动画](https://github.com/cary-mao/small/tree/master/src/simple_circle_loading)
 - [背景固定滚动效果](https://github.com/cary-mao/small/tree/master/src/background_scrolling_effect)
 - [悬停背景幻灯片过渡](https://github.com/cary-mao/small/tree/master/src/hover_slide_img)
-- [谷歌 logo](https://github.com/cary-mao/small/tree/master/src/google_logo)
+- [谷歌logo](https://github.com/cary-mao/small/tree/master/src/google_logo)
 - [竖直霓虹灯](https://github.com/cary-mao/small/tree/master/src/neon_vertical_lights)
 - [锯齿背景](https://github.com/cary-mao/small/tree/master/src/zigzag)
 - [悬停容器居中缩放效果](https://github.com/cary-mao/small/tree/master/src/hover_container_effect)
-- [3d 倾斜按钮](https://github.com/cary-mao/small/tree/master/src/3d_skewed_btn)
+- [3d倾斜按钮](https://github.com/cary-mao/small/tree/master/src/3d_skewed_btn)
 - [苹果笔记本显示屏](https://github.com/cary-mao/small/tree/master/src/macbook)
 - [矩形对角错位加载动画](https://github.com/cary-mao/small/tree/master/src/loading_animation)
 - [三边框圆加载动画](https://github.com/cary-mao/small/tree/master/src/three_border_circle_loading)
@@ -46,8 +45,8 @@ https://cary-mao.github.io/small/
 - [抽屉侧边栏](https://github.com/cary-mao/small/tree/master/src/drawer)
 - [悬停图片颜色滤波](https://github.com/cary-mao/small/tree/master/src/img_color_filter_hover)
 - [在圆形路径移动圆](https://github.com/cary-mao/small/tree/master/src/move_circle_in_circular_path)
-- [css 发光位置图标](https://github.com/cary-mao/small/tree/master/src/glowing_location_pointer)
-- [css 按钮悬停效果](https://github.com/cary-mao/small/tree/master/src/button_hover_effect)
+- [css发光位置图标](https://github.com/cary-mao/small/tree/master/src/glowing_location_pointer)
+- [css按钮悬停效果](https://github.com/cary-mao/small/tree/master/src/button_hover_effect)
 - [键盘](https://github.com/cary-mao/small/tree/master/src/keyboard)
 - [圆形边框动画](https://github.com/cary-mao/small/tree/master/src/circle_border_animation)
 - [菜单悬停模糊透明效果](https://github.com/cary-mao/small/tree/master/src/menu_hover_effect)
@@ -55,6 +54,7 @@ https://cary-mao.github.io/small/
 - [按钮悬停箭头动画](https://github.com/cary-mao/small/tree/master/src/button_hover_arrow_animation)
 - [装水杯动画](https://github.com/cary-mao/small/tree/master/src/full_water_cup)
 - [球型水波加载动画](https://github.com/cary-mao/small/tree/master/src/wave_ball_loading)
+
 
 # 本地使用
 
@@ -68,11 +68,9 @@ npm link
 
 创建一个新项目/demo：`scl create <project_name>`  
 添加项目文档：`scl docs <project_name> <project_title>`  
-删除一个新项目/demo：`scl delete <project_name>`  
 git 提交：`git add .`和`scl commit`  
 跳转到给定项目：`scl goto name`  
 选择跳转的项目：`scl goto -s/--select`  
-重新生成项目文档和引导页面：`scl rebuild`  
 
 # VSCode Preview
 
