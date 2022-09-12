@@ -8,7 +8,7 @@ https://cary-mao.github.io/small/
 
 # 代码目录
 
-- [视差滚动](https://github.com/cary-mao/small/tree/master/src/parallax_scrolling)
+- [简单视差滚动](https://github.com/cary-mao/small/tree/master/src/parallax_scrolling)
 - [全屏视频 banner](https://github.com/cary-mao/small/tree/master/src/full_screen_video)
 - [css3 滚动转换](https://github.com/cary-mao/small/tree/master/src/transform_by_scroll)
 - [全屏导航菜单](https://github.com/cary-mao/small/tree/master/src/full_screen_menu_overlay)
@@ -33,7 +33,7 @@ https://cary-mao.github.io/small/
 - [背景固定滚动效果](https://github.com/cary-mao/small/tree/master/src/background_scrolling_effect)
 - [悬停背景幻灯片过渡](https://github.com/cary-mao/small/tree/master/src/hover_slide_img)
 - [谷歌 logo](https://github.com/cary-mao/small/tree/master/src/google_logo)
-- [竖直霓虹灯](https://github.com/cary-mao/small/tree/master/src/neno_vertical_lights)
+- [竖直霓虹灯](https://github.com/cary-mao/small/tree/master/src/neon_vertical_lights)
 - [锯齿背景](https://github.com/cary-mao/small/tree/master/src/zigzag)
 - [悬停容器居中缩放效果](https://github.com/cary-mao/small/tree/master/src/hover_container_effect)
 - [3d 倾斜按钮](https://github.com/cary-mao/small/tree/master/src/3d_skewed_btn)
@@ -55,7 +55,6 @@ https://cary-mao.github.io/small/
 - [按钮悬停箭头动画](https://github.com/cary-mao/small/tree/master/src/button_hover_arrow_animation)
 - [装水杯动画](https://github.com/cary-mao/small/tree/master/src/full_water_cup)
 - [球型水波加载动画](https://github.com/cary-mao/small/tree/master/src/wave_ball_loading)
-- [d](https://github.com/cary-mao/small/tree/master/src/a)
 
 # 本地使用
 
@@ -69,9 +68,11 @@ npm link
 
 创建一个新项目/demo：`scl create <project_name>`  
 添加项目文档：`scl docs <project_name> <project_title>`  
-git 提交：`git add .`和`scl commit`
-跳转到给定项目：`scl goto name`
-选择跳转的项目：`scl goto -s/--select`
+删除一个新项目/demo：`scl delete <project_name>`  
+git 提交：`git add .`和`scl commit`  
+跳转到给定项目：`scl goto name`  
+选择跳转的项目：`scl goto -s/--select`  
+重新生成项目文档和引导页面：`scl rebuild`  
 
 # VSCode Preview
 

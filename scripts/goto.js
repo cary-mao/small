@@ -2,10 +2,11 @@ const vscode = require('./vscode')
 const { getProjects } = require('./utils')
 const inquirer = require('inquirer')
 const path = require('path')
+const {source_dir} = require('../.smallrc')
 
 module.exports = function goto(name, options) {
     if (name) {
-        vscode.goto(path.resolve(__dirname, `../src/${name}/index.html`))
+        vscode.goto(path.resolve(__dirname, `../${source_dir}/${name}/index.html`))
         return
     }
 
@@ -19,7 +20,7 @@ module.exports = function goto(name, options) {
                 choices: projects
             }
         ]).then(({project}) => {
-            vscode.goto(path.resolve(__dirname, `../src/${project}/index.html`))
+            vscode.goto(path.resolve(__dirname, `../${source_dir}/${project}/index.html`))
         })
     }
 }

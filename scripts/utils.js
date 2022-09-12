@@ -1,5 +1,6 @@
 const path = require('path')
 const shell = require('shelljs')
+const {source_dir} = require('../.smallrc')
 
 exports.genPathRelativeFn = function genPathRelativeFn (pathPrefix) {
   return (p = '') => {
@@ -22,5 +23,5 @@ exports.inquirer = {
 }
 
 exports.getProjects = function getProjects () {
-  return shell.ls(path.resolve(__dirname, '../src'))
+  return shell.ls(path.resolve(__dirname, `../${source_dir}`))
 }

@@ -6,6 +6,8 @@ const path = require('path')
 const docs = require('./docs')
 const git = require('./git')
 const gotoFn = require('./goto')
+const rebuild = require('./rebuild')
+const deleteFn = require('./delete')
 
 const program = new Command()
 
@@ -35,5 +37,14 @@ program.command('goto [name]')
   .action((name, options) => {
     gotoFn(name, options)
   })
+
+program.command('rebuild')
+  .description('rebuild readme and index page')
+  .action(rebuild)
+
+
+program.command('delete <name>')
+  .description('delete project by name')
+  .action(deleteFn)
 
 program.parse(process.argv)

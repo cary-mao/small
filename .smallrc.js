@@ -1,3 +1,4 @@
 module.exports = {
-  source_dir: 'src'
+  source_dir: 'src',
+  root: __dirname
 }
