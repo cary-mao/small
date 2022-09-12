@@ -1,4 +1,5 @@
 const path = require('path')
+const shell = require('shelljs')
 
 exports.genPathRelativeFn = function genPathRelativeFn (pathPrefix) {
   return (p = '') => {
@@ -18,4 +19,8 @@ exports.inquirer = {
       done(null, true)
     }
   }
+}
+
+exports.getProjects = function getProjects () {
+  return shell.ls(path.resolve(__dirname, '../src'))
 }

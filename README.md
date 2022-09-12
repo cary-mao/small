@@ -54,6 +54,8 @@ https://cary-mao.github.io/small/
 - [点击图标上下滑动切换](https://github.com/cary-mao/small/tree/master/src/animate_toggle_icon)
 - [按钮悬停箭头动画](https://github.com/cary-mao/small/tree/master/src/button_hover_arrow_animation)
 - [装水杯动画](https://github.com/cary-mao/small/tree/master/src/full_water_cup)
+- [球型水波加载动画](https://github.com/cary-mao/small/tree/master/src/wave_ball_loading)
+- [d](https://github.com/cary-mao/small/tree/master/src/a)
 
 # 本地使用
 
@@ -68,6 +70,8 @@ npm link
 创建一个新项目/demo：`scl create <project_name>`  
 添加项目文档：`scl docs <project_name> <project_title>`  
 git 提交：`git add .`和`scl commit`
+跳转到给定项目：`scl goto name`
+选择跳转的项目：`scl goto -s/--select`
 
 # VSCode Preview
 

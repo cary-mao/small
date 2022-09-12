@@ -5,6 +5,7 @@ const { source_dir } = require('../../.smallrc')
 const prettier = require('prettier')
 const { genPathRelativeFn, inquirer: inquirerUtils } = require('../utils')
 const docs = require('../docs')
+const gotoFn = require('../goto')
 
 module.exports = function create (name, root = process.cwd()) {
   inquirer.prompt([
@@ -76,6 +77,7 @@ module.exports = function create (name, root = process.cwd()) {
       parser: 'html'
     })
     shell.ShellString(templateString).to(htmlPath)
+    gotoFn(name)
   })
 }
 
