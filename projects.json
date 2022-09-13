@@ -46,5 +46,7 @@
   "button_hover_arrow_animation": "按钮悬停箭头动画",
   "full_water_cup": "装水杯动画",
   "wave_ball_loading": "球型水波加载动画",
-  "block_move_loading": "移动快加载动画"
+  "block_move_loading": "移动快加载动画",
+  "razor_shape_div": "剃刀片形状div",
+  "border_shape_controller": "边框形状调整器"
 }

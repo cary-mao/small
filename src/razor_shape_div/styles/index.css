@@ -1,0 +1,37 @@
+/**
+    核心：理解边框的形状变化
+    边框与边框之间的连接是形45度角（对角线）连接的，在盒子宽度和高度为零时很明显。
+    边框宽度变大，会向着盒子方向移动，若box-sizing是border-box或者该方向上边长为0（宽度或高度），在碰到另一个边框时，不在向该方向移动，而是反方向增长。
+*/
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #262626;
+}
+
+.box {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 1200px;
+    height: 400px;
+    box-shadow: 0 25px 30px rgba(0, 0, 0, .5);
+}
+
+.content {
+    width: calc(50% - 50px);
+    height: 100%;
+    background-color: #000;
+    box-sizing: border-box;
+}
+
+.img_box {
+    width: calc(50% + 50px);
+    height: 100%;
+    background-color: #f00;
+    box-sizing: border-box;
+    border-left: 100px solid #000;
+    border-bottom: 400px solid transparent;
+}
