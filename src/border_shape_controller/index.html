@@ -8,6 +8,74 @@
     <link rel="stylesheet" href="./styles/index.css" />
   </head>
   <body>
+    <div class="container">
+        <div id="box"></div>
+    </div>
+
+    <div class="control_box">
+      <div class="item">
+        盒子类型
+        content-box
+        <label for="type">
+          <div class="switch">
+            <input type="checkbox" id="type">
+            <span class="slider round"></span> 
+          </div>
+        </label>
+        border-box
+      </div>
+      <div class="item">
+        <label for="w">盒子宽度</label>
+        <input type="range" min="0" max="1200" name="" id="w">
+        <span></span>
+      </div>
+      <div class="item">
+        <label for="h">盒子高度</label>
+        <input type="range" min="0" max="600" name="" id="h">
+        <span></span>
+      </div>
+      <div class="item">
+        <label for="bt">上边框宽度</label>
+        <input type="range" min="0" max="600" name="" id="bt">
+        <span></span>
+      </div>
+      <div class="item">
+        <label for="br">右边框宽度</label>
+        <input type="range" min="0" max="1200" name="" id="br">
+        <span></span>
+      </div>
+      <div class="item">
+        <label for="bb">下边框宽度</label>
+        <input type="range" min="0" max="600" name="" id="bb">
+        <span></span>
+      </div>
+      <div class="item">
+        <label for="bl">左边框宽度</label>
+        <input type="range" min="0" max="1200" name="" id="bl">
+        <span></span>
+      </div>
+      <div class="item">
+        <label for="bc">盒子背景颜色</label>
+        <input type="text" name="" id="bc" data-color>
+      </div>
+      <div class="item">
+        <label for="btc">上边框颜色</label>
+        <input type="text" name="" id="btc" data-color>
+      </div>
+      <div class="item">
+        <label for="brc">右边框颜色</label>
+        <input type="text" name="" id="brc" data-color>
+      </div>
+      <div class="item">
+        <label for="bbc">下边框颜色</label>
+        <input type="text" name="" id="bbc" data-color>
+      </div>
+      <div class="item">
+        <label for="blc">左边框颜色</label>
+        <input type="text" name="" id="blc" data-color>
+      </div>
+    </div>
+
     <script src="./scripts/index.js"></script>
   </body>
 </html>
