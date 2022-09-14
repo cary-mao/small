@@ -61,6 +61,7 @@ https://cary-mao.github.io/small/
 - [边框形状调整器](https://github.com/cary-mao/small/tree/master/src/border_shape_controller)
 - [金属文本](https://github.com/cary-mao/small/tree/master/src/metal_text)
 - [自定义单选 switch](https://github.com/cary-mao/small/tree/master/src/switch)
+- [技能水平条形图](https://github.com/cary-mao/small/tree/master/src/skills_horizontal_bar_graph)
 
 # 本地使用
 
