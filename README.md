@@ -59,6 +59,8 @@ https://cary-mao.github.io/small/
 - [移动快加载动画](https://github.com/cary-mao/small/tree/master/src/block_move_loading)
 - [剃刀片形状 div](https://github.com/cary-mao/small/tree/master/src/razor_shape_div)
 - [边框形状调整器](https://github.com/cary-mao/small/tree/master/src/border_shape_controller)
+- [金属文本](https://github.com/cary-mao/small/tree/master/src/metal_text)
+- [自定义单选 switch](https://github.com/cary-mao/small/tree/master/src/switch)
 
 # 本地使用
 

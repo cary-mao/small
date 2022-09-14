@@ -48,5 +48,7 @@
   "wave_ball_loading": "球型水波加载动画",
   "block_move_loading": "移动快加载动画",
   "razor_shape_div": "剃刀片形状div",
-  "border_shape_controller": "边框形状调整器"
+  "border_shape_controller": "边框形状调整器",
+  "metal_text": "金属文本",
+  "switch": "自定义单选switch"
 }
