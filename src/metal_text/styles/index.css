@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    padding: 0;
+    /* background: url(); */
+    background-color: #000;
+}
+
+h1 > span {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    font-family: sans-serif;
+    font-style: italic;
+    font-size: 5em;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    /* 金属光泽背景 */
+    background: linear-gradient(#262626, #eaeaea, #262626);
+    /* 按文本形状裁剪背景 */
+    -webkit-background-clip: text;
+    /* 让原来的文字透明 */
+    color: transparent;
+}
+
+h1 > span:nth-child(1) {
+    z-index: 2;
+}
+
+h1 > span:nth-child(2) {
+    z-index: 1;
+    /* 添加阴影，更显立体 */
+    text-shadow: 1px 1px 0 #262626, 2px 2px 0 #262626, 3px 3px 0 #262626, 4px 4px 0 #262626, 5px 5px 0 #262626, 1px 1px 0 #262626, 6px 20px 20px rgba(0,0,0,1), -1px -1px 0 #fff;
+}
