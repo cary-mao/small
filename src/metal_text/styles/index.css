@@ -22,6 +22,7 @@ h1 > span {
     /* 金属光泽背景 */
     background: linear-gradient(#262626, #eaeaea, #262626);
     /* 按文本形状裁剪背景 */
+    background-clip: text;
     -webkit-background-clip: text;
     /* 让原来的文字透明 */
     color: transparent;
