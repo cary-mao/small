@@ -62,6 +62,7 @@ https://cary-mao.github.io/small/
 - [金属文本](https://github.com/cary-mao/small/tree/master/src/metal_text)
 - [自定义单选 switch](https://github.com/cary-mao/small/tree/master/src/switch)
 - [技能水平条形图](https://github.com/cary-mao/small/tree/master/src/skills_horizontal_bar_graph)
+- [接触式表单](https://github.com/cary-mao/small/tree/master/src/contact_form)
 
 # 本地使用
 

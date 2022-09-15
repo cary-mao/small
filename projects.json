@@ -51,5 +51,6 @@
   "border_shape_controller": "边框形状调整器",
   "metal_text": "金属文本",
   "switch": "自定义单选switch",
-  "skills_horizontal_bar_graph": "技能水平条形图"
+  "skills_horizontal_bar_graph": "技能水平条形图",
+  "contact_form": "接触式表单"
 }
