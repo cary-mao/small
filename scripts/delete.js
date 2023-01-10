@@ -7,8 +7,6 @@ const projects = require('../projects.json')
 module.exports = function deleteFn (name) {
     if (!projects[name]) return
 
-    console.log(projects[name])
-
     // delete link of index page
     fs.readFile(path.resolve(root, 'index.html'), 'utf-8', (err, text) => {
         const t = text.replace(`<li><a href="./src/${name}/index.html">${projects[name]}</a></li>`, '')

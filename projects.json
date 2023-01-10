@@ -53,5 +53,6 @@
   "switch": "自定义单选switch",
   "skills_horizontal_bar_graph": "技能水平条形图",
   "contact_form": "接触式表单",
-  "splend_ring_loading": "发光圆环加载动画"
+  "splend_ring_loading": "发光圆环加载动画",
+  "flip": "flip"
 }

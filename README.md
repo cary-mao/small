@@ -55,7 +55,6 @@ https://cary-mao.github.io/small/
 - [按钮悬停箭头动画](https://github.com/cary-mao/small/tree/master/src/button_hover_arrow_animation)
 - [装水杯动画](https://github.com/cary-mao/small/tree/master/src/full_water_cup)
 - [球型水波加载动画](https://github.com/cary-mao/small/tree/master/src/wave_ball_loading)
-
 - [移动快加载动画](https://github.com/cary-mao/small/tree/master/src/block_move_loading)
 - [剃刀片形状 div](https://github.com/cary-mao/small/tree/master/src/razor_shape_div)
 - [边框形状调整器](https://github.com/cary-mao/small/tree/master/src/border_shape_controller)
@@ -64,6 +63,7 @@ https://cary-mao.github.io/small/
 - [技能水平条形图](https://github.com/cary-mao/small/tree/master/src/skills_horizontal_bar_graph)
 - [接触式表单](https://github.com/cary-mao/small/tree/master/src/contact_form)
 - [发光圆环加载动画](https://github.com/cary-mao/small/tree/master/src/splend_ring_loading)
+- [flip](https://github.com/cary-mao/small/tree/master/src/flip)
 
 # 本地使用
 
