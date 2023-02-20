@@ -64,6 +64,7 @@ https://cary-mao.github.io/small/
 - [接触式表单](https://github.com/cary-mao/small/tree/master/src/contact_form)
 - [发光圆环加载动画](https://github.com/cary-mao/small/tree/master/src/splend_ring_loading)
 - [flip](https://github.com/cary-mao/small/tree/master/src/flip)
+- [slide_up](https://github.com/cary-mao/small/tree/master/src/slide_up)
 
 # 本地使用
 

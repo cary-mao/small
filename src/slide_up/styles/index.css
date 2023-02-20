@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+}
+
+.slide-up-block {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #fff;
+}
